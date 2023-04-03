@@ -8,10 +8,12 @@
 - Google 开源的应用开发框架，支持移动、Web、桌面和嵌入式平台
 
 ## Dart 简介
-- https://dart.cn/codelabs/dart-cheatsheet
-- 具有实时 (JIT) 编译功能的 Dart VM 和用于生成机器代码的提前 (AOT) 编译器
-- Web 编译器可以将 Dart 转换为 JavaScript
-- 强类型、泛型、异常（throw try-catch）、异步（future async-await）
+- https://github.com/dart-lang/sdk
+- BSD-3-Clause license
+- Dart Native：包括一个带有 JIT（即时）编译的 Dart VM 和一个用于生成机器代码的 AOT（提前）编译器
+- Dart Web：包括开发时编译器 (dartdevc) 和生产时编译器 (dart2js)
+- 保持简洁：继承了许多与 C、Java、JavaScript 及其他语言相同的语句和表达式语法
+- 支持：强类型、泛型、异常（throw try-catch）、异步（future async-await）
 
 ## 开发环境
 - https://flutter.cn/docs/get-started/install
