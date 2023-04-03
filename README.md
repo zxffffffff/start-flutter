@@ -1,11 +1,17 @@
 # start-flutter
 一个 flutter 跨平台脚手架（PC + Mobile），使用原生以及 C++ 混合开发
 
-## 简介
+## flutter 简介
 - https://github.com/flutter
 - BSD-3-Clause license
 - Dart（Skia）
 - Google 开源的应用开发框架，支持移动、Web、桌面和嵌入式平台
+
+## Dart 简介
+- https://dart.cn/codelabs/dart-cheatsheet
+- 具有实时 (JIT) 编译功能的 Dart VM 和用于生成机器代码的提前 (AOT) 编译器
+- Web 编译器可以将 Dart 转换为 JavaScript
+- 强类型、泛型、异常（throw try-catch）、异步（future async-await）
 
 ## 开发环境
 - https://flutter.cn/docs/get-started/install
