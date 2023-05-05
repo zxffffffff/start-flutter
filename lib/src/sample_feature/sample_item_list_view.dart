@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-
 import '../settings/settings_view.dart';
+import 'login_view.dart';
+import 'platform_channels_view.dart';
+import 'painter_view.dart';
 import 'sample_item.dart';
 import 'sample_item_details_view.dart';
 
@@ -8,7 +10,12 @@ import 'sample_item_details_view.dart';
 class SampleItemListView extends StatelessWidget {
   const SampleItemListView({
     super.key,
-    this.items = const [SampleItem(1), SampleItem(2), SampleItem(3)],
+    this.items = const [
+      SampleItem(SampleItemDetailsView.routeName, 'Sample Item Details'),
+      SampleItem(LoginView.routeName, '[TODO] Login'),
+      SampleItem(PlatformChannelsView.routeName, '[TODO] Platform Channels'),
+      SampleItem(PainterView.routeName, '[TODO] Painter')
+    ],
   });
 
   static const routeName = '/';
@@ -49,21 +56,20 @@ class SampleItemListView extends StatelessWidget {
           final item = items[index];
 
           return ListTile(
-            title: Text('SampleItem ${item.id}'),
-            leading: const CircleAvatar(
-              // Display the Flutter Logo image asset.
-              foregroundImage: AssetImage('assets/images/flutter_logo.png'),
-            ),
-            onTap: () {
-              // Navigate to the details page. If the user leaves and returns to
-              // the app after it has been killed while running in the
-              // background, the navigation stack is restored.
-              Navigator.restorablePushNamed(
-                context,
-                SampleItemDetailsView.routeName,
-              );
-            }
-          );
+              title: Text(item.text),
+              leading: const CircleAvatar(
+                // Display the Flutter Logo image asset.
+                foregroundImage: AssetImage('assets/images/flutter_logo.png'),
+              ),
+              onTap: () {
+                // Navigate to the details page. If the user leaves and returns to
+                // the app after it has been killed while running in the
+                // background, the navigation stack is restored.
+                Navigator.restorablePushNamed(
+                  context,
+                  item.routeName,
+                );
+              });
         },
       ),
     );
