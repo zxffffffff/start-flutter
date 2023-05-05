@@ -4,7 +4,7 @@
 ## flutter 简介
 - https://github.com/flutter
 - BSD-3-Clause license
-- Dart（Skia）
+- Skia, Impeller preview
 - Google 开源的应用开发框架，支持移动、Web、桌面和嵌入式平台
 
 ## Dart 简介
