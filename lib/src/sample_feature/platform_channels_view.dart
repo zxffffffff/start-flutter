@@ -81,6 +81,8 @@ class _PlatformChannelsViewState extends State<PlatformChannelsView> {
     _testTimer =
         Timer.periodic(const Duration(milliseconds: 10), (timer) async {
       final Ret ret = await _getChannelPerf();
+      // 异步需要考虑对象生命周期
+      if (_testTimer == null || !_testTimer!.isActive) return;
       if (!ret.ok) {
         stopTimerPerf();
       }
@@ -92,6 +94,7 @@ class _PlatformChannelsViewState extends State<PlatformChannelsView> {
 
   void stopTimerPerf() {
     _testTimer?.cancel();
+    _testTimer = null;
   }
 
   @override
@@ -117,23 +120,23 @@ class _PlatformChannelsViewState extends State<PlatformChannelsView> {
           children: [
             ElevatedButton(
               onPressed: () {
-                if (_testTimer != null && _testTimer!.isActive) {
-                  stopTimerPerf();
-                } else {
+                if (_testTimer == null || !_testTimer!.isActive) {
                   startTimerPerf();
+                } else {
+                  stopTimerPerf();
                 }
                 setState(() {}); // update Text
               },
-              child: Text(_testTimer != null && _testTimer!.isActive
-                  ? 'Stop Channel Perf'
-                  : 'Start Channel Perf'),
+              child: Text(_testTimer == null || !_testTimer!.isActive
+                  ? 'Start Channel Perf'
+                  : 'Stop Channel Perf'),
             ),
             Text(_testPerf),
             ElevatedButton(
               onPressed: () async {
                 final Ret ret = await _getBatteryLevel();
                 setState(() {
-                  _batteryLevel = ret.ok ? ret.data : ret.err;
+                  _batteryLevel = ret.ok ? '${ret.data}%' : ret.err;
                 });
               },
               child: const Text('Get Battery Level'),
