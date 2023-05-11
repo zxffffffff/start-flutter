@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_app/src/sample_feature/stock_charts_view.dart';
 import '../settings/settings_view.dart';
 import 'login_view.dart';
 import 'platform_channels_view.dart';
@@ -14,7 +15,8 @@ class SampleItemListView extends StatelessWidget {
       SampleItem(SampleItemDetailsView.routeName, 'Sample Item Details'),
       SampleItem(LoginView.routeName, '[TODO] Login'),
       SampleItem(PlatformChannelsView.routeName, 'Platform Channels'),
-      SampleItem(PainterView.routeName, '[TODO] Painter')
+      SampleItem(PainterView.routeName, '[TODO] Painter'),
+      SampleItem(StockChartsView.routeName, '[WIP] Stock Charts')
     ],
   });
 

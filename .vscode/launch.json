@@ -20,12 +20,6 @@
             "request": "launch",
             "type": "dart",
             "flutterMode": "release"
-        },
-        {
-            "name": "my_app",
-            "cwd": "my_app",
-            "request": "launch",
-            "type": "dart"
         }
     ]
 }

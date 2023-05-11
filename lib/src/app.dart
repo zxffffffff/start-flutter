@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'sample_feature/stock_charts_view.dart';
 import 'sample_feature/login_view.dart';
 import 'sample_feature/platform_channels_view.dart';
 import 'sample_feature/painter_view.dart';
@@ -64,6 +65,8 @@ class MyApp extends StatelessWidget {
                     return const PlatformChannelsView();
                   case PainterView.routeName:
                     return const PainterView();
+                  case StockChartsView.routeName:
+                    return const StockChartsView();
                   case SampleItemListView.routeName:
                   default:
                     return const SampleItemListView();
