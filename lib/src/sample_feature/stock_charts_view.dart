@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:stock_charts/chart.dart';
+import 'package:stock_charts/demo_chart.dart';
 
 /// Displays detailed information about a SampleItem.
 class StockChartsView extends StatefulWidget {
@@ -27,8 +27,8 @@ class _StockChartsViewState extends State<StockChartsView> {
       appBar: AppBar(
         title: const Text('StockChartsView'),
       ),
-      body: const Center(
-        child: Chart(),
+      body: Center(
+        child: DemoChart(),
       ),
     );
   }
