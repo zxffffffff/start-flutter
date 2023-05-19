@@ -152,9 +152,11 @@ packages:
   stock_charts:
     dependency: "direct main"
     description:
-      path: "../stock-charts-dart"
-      relative: true
-    source: path
+      path: "."
+      ref: main
+      resolved-ref: b545d457464b2a8b8a4b5b6d63b00aa95255333c
+      url: "https://github.com/zxffffffff/stock-charts-dart.git"
+    source: git
     version: "0.0.1"
   stream_channel:
     dependency: transitive

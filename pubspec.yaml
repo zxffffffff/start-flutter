@@ -17,10 +17,10 @@ dependencies:
   
   # K线图和指标管理（模仿富途）
   stock_charts:
-    path: ../stock-charts-dart
-    # git:
-    #   url: https://github.com/zxffffffff/stock-charts-dart.git
-    #   ref: main
+    # path: ../stock-charts-dart
+    git:
+      url: https://github.com/zxffffffff/stock-charts-dart.git
+      ref: main
 
 dev_dependencies:
   flutter_test:
