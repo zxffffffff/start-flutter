@@ -92,10 +92,10 @@ packages:
     dependency: transitive
     description:
       name: lints
-      sha256: "6b0206b0bf4f04961fc5438198ccb3a885685cd67d4d4a32cc20ad7f8adbe015"
+      sha256: "0a217c6c989d21039f1498c3ed9f3ed71b354e69873f13a8dfc3c9fe76f1b452"
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "2.1.0"
+    version: "2.1.1"
   matcher:
     dependency: transitive
     description:
@@ -120,6 +120,15 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "1.9.1"
+  note_editor:
+    dependency: "direct main"
+    description:
+      path: "."
+      ref: main
+      resolved-ref: "21691251f8a6632986051059eb79a4a96151513f"
+      url: "https://github.com/zxffffffff/note-editor.git"
+    source: git
+    version: "0.0.1"
   path:
     dependency: transitive
     description:
@@ -154,7 +163,7 @@ packages:
     description:
       path: "."
       ref: main
-      resolved-ref: "1c943ee5760fffc046749bddb061538a044c6e3d"
+      resolved-ref: "81f1702c9eaa70f750db2ec93114e9f21fc71599"
       url: "https://github.com/zxffffffff/stock-charts-dart.git"
     source: git
     version: "0.0.1"
@@ -194,10 +203,10 @@ packages:
     dependency: transitive
     description:
       name: tuple
-      sha256: "0ea99cd2f9352b2586583ab2ce6489d1f95a5f6de6fb9492faaf97ae2060f0aa"
+      sha256: a97ce2013f240b2f3807bcbaf218765b6f301c3eff91092bcfa23a039e7dd151
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "2.0.1"
+    version: "2.0.2"
   vector_math:
     dependency: transitive
     description:

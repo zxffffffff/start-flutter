@@ -20,7 +20,14 @@ dependencies:
     git:
       url: https://github.com/zxffffffff/stock-charts-dart.git
       ref: main
-    #path: ../stock-charts-dart # 也可以指定本地路径
+    # path: ../stock-charts-dart # 也可以指定本地路径
+
+  # K线图和指标管理（模仿富途）
+  note_editor:
+    git:
+      url: https://github.com/zxffffffff/note-editor.git
+      ref: main
+    # path: ../note-editor # 也可以指定本地路径
 
 dev_dependencies:
   flutter_test:
