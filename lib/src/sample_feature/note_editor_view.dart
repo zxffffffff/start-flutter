@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:note_editor/note_editor.dart';
+import 'package:note_editor/note_toolbar.dart';
 
 /// Displays detailed information about a SampleItem.
 class NoteEditorView extends StatelessWidget {
@@ -12,8 +14,11 @@ class NoteEditorView extends StatelessWidget {
       appBar: AppBar(
         title: const Text('NoteEditorView'),
       ),
-      body: const Center(
-        child: Text('NoteEditor_view'),
+      body: Column(
+        children: [
+          NoteEditor(),
+          NoteToolbar(),
+        ],
       ),
     );
   }

@@ -15,7 +15,7 @@ class SampleItemListView extends StatelessWidget {
     this.items = const [
       SampleItem(SampleItemDetailsView.routeName, 'Sample Item Details'),
       SampleItem(LoginView.routeName, '[TODO] Login'),
-      SampleItem(PlatformChannelsView.routeName, 'Platform Channels'),
+      SampleItem(PlatformChannelsView.routeName, '[WIP] Platform Channels'),
       SampleItem(PainterView.routeName, '[TODO] Painter'),
       SampleItem(StockChartsView.routeName, '[WIP] Stock Charts'),
       SampleItem(NoteEditorView.routeName, '[WIP] Note Editor'),
