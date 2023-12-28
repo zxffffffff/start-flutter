@@ -35,6 +35,24 @@ export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 - 可以使用 VS Code 插件运行 `flutter create`
 - 创建 `launch.json` 并 `F5` 启动
 
+## 命令
+- https://docs.flutter.dev/reference/flutter-cli
+
+```bash
+flutter --help --verbose # 查看所有命令
+flutter pub get          # 获取依赖
+
+# Native
+flutter devices          # 列出所有设备
+flutter run -d macos     # [mobile-device-id]/macos/windows/chrome/edge
+flutter build ios        # ios/apk/macos/windows/web
+
+# Web
+# --web-renderer html(canvas) canvaskit(skia wasm)
+flutter run -d chrome --web-renderer html --profile --web-port=7788
+flutter build web --web-renderer html --release
+```
+
 
 
 # my_app

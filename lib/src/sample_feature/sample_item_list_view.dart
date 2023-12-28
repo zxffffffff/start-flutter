@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:my_app/src/sample_feature/note_editor_view.dart';
-import 'package:my_app/src/sample_feature/stock_charts_view.dart';
 import '../settings/settings_view.dart';
+import 'stock_charts_view.dart';
 import 'login_view.dart';
 import 'platform_channels_view.dart';
 import 'painter_view.dart';
 import 'sample_item.dart';
 import 'sample_item_details_view.dart';
+import 'native_view.dart';
 
 /// Displays a list of SampleItems.
 class SampleItemListView extends StatelessWidget {
@@ -18,7 +18,7 @@ class SampleItemListView extends StatelessWidget {
       SampleItem(PlatformChannelsView.routeName, '[WIP] Platform Channels'),
       SampleItem(PainterView.routeName, '[TODO] Painter'),
       SampleItem(StockChartsView.routeName, '[WIP] Stock Charts'),
-      SampleItem(NoteEditorView.routeName, '[WIP] Note Editor'),
+      SampleItem(NativeView.routeName, 'Native View'),
     ],
   });
 
